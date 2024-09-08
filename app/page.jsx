@@ -1,7 +1,16 @@
+import User from "@/components/User";
+
+export const metadata = {
+  title: "Home",
+};
+
 const Home = () => {
   return (
-    <h1>Home</h1>
-  )
-}
+    <section>
+      <h1>Home</h1>
+      <User />
+    </section>
+  );
+};
 
-export default Home
+export default Home;
