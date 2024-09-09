@@ -3,7 +3,8 @@ import React, { useEffect } from "react";
 
 const User = () => {
   useEffect(() => {
-    alert("Welcome");
+    // alert("Welcome");
+    console.log("Welcome");
   }, []);
 
   return <div>User</div>;
