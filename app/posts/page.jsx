@@ -2,7 +2,7 @@ import PostCard from "@/components/PostCard";
 
 async function loadPosts() {
   const resp = await fetch("https://jsonplaceholder.typicode.com/posts").then(
-    (response) => response.json()
+    (res) => res.json()
   );
   return resp;
 }
