@@ -7,7 +7,10 @@ export const GET = async () => {
   return NextResponse.json(resp);
 };
 
-export const POST = () => {
+export const POST = async (request) => {
+  const {name, last_name} = await request.json(); // access to request body
+  console.log(name, last_name);
+
   return NextResponse.json({ message: "POST correct response" });
 };
 
