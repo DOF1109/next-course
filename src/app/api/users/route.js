@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+console.log(process.env.TOKEN);
+
 export const GET = async () => {
   const resp = await fetch("https://jsonplaceholder.typicode.com/users").then(
     (res) => res.json()
@@ -8,7 +10,7 @@ export const GET = async () => {
 };
 
 export const POST = async (request) => {
-  const {name, last_name} = await request.json(); // access to request body
+  const { name, last_name } = await request.json(); // access to request body
   console.log(name, last_name);
 
   return NextResponse.json({ message: "POST correct response" });
